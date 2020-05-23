@@ -1,2 +1,2 @@
 # eMCheck
-check new emails shell script
+encrypt Mail Checker shell script
