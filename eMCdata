@@ -21,10 +21,12 @@ user 'user.name@yahoo.com' there with password 'password' is 'user.name' here op
  
 # 
 # For fetchmail full set of options read: man fetchmail.
+# The latest HTML FAQ is available alongside the latest fetchmail sources at the fetchmail home page: 
+# http://www.fetchmail.info/
 # fetchmailconf, a Python-based GUI to configure fetchmail, can generate a fetchmailrc file.
 # 
 # After writing the accounts data encrypt eMCdata using the new password:  
-# 	openssl aes-256-ctr -md sha256 -k new_pssw eMCdata > eMCdata.esh
+#                        openssl aes-256-ctr -md sha256 -k new_pssw eMCdata > eMCdata.esh
 # 
 # Note that gmail.com require extra setup, log in and go to Settings > Forwarding and POP/IMAP tab and set:
 # Enable POP for mail that arrives from now: ON
