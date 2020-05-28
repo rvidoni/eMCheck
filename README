@@ -85,9 +85,11 @@ NOTES
 
 TODO
 - Rewrite eMCheck using AWK to reduce temp files.
-- Check the "IN #" data source to avoid confusion after deleting mails.
+- Check the "IN #" data source to avoid confusion after deleting mails. [Stauts: testing]
 - Add section to manage slow connections errors and fetchmail authorization failure message.
-- Python script to download email headers and few lines to delete undesired.  
+- Shell script to download email headers and few lines to delete undesired. [Status: starting]
+- Add 2 Factor Authentication. 
+- eMCheck run from memory disk (ramdisk) with reserved or protected memory: OS related. [Status: documentation]
 
 
 DEPENDENCIES
