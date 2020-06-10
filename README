@@ -66,7 +66,7 @@ The latest HTML FAQ is available alongside the latest fetchmail sources at the f
 
 After writing the accounts data encrypt eMCdata using the new password:  
 
-	openssl aes-256-ctr -md sha256 -k new_pssw eMCdata > eMCdata.esh
+	openssl aes-256-ctr -md sha256 -k new_pssw <> eMCdata > eMCdata.esh
 
 
 Note: gmail.com require extra setup, log in and go to Settings > Forwarding and POP/IMAP tab and set:
