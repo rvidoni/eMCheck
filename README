@@ -1,23 +1,23 @@
 eMCheck, encrypt Mail Checker, check for new email in gmail.com, yahoo.com and other accounts.
 eMCheck is an encrypted shell script tested in FreeBSD, OpenBSD and Debian Linux and depends on fetchmail.
-
+"
 eMCheck print 4 fields: 
 	"Start #" session mail number.
 	"Now #" last check new mail.
 	"In #" session new mail.
 	"Inbox" total mail on the server.
-
+"
 The scripts with sensitive data are OpenSSL encrypted with salted password, cipher aes-256-ctr, Message Digest sha256.
-
-
+"
+"
 USAGE
 sh path/to/directory/eMC.sh  or  ./path/to/directory/eMC.sh if the script is executable (chmod +x eMC.sh)
-
+"
 Before run eMCheck some homework must be done:
 	- Change the eMCheck default password with one more secure and encrypt it to create eMCheck.esh
 	- Modify the eMCdata according to your mail accounts and encrypt it to create eMCdata.esh
-
-
+"
+"
 FILES
 eMCheck consist in two scripts and one data file that must to be in the same directory.
 
@@ -85,9 +85,9 @@ NOTES
 
 TODO
 - Rewrite eMCheck using AWK to reduce temp files.
-- Check the "IN #" data source to avoid confusion after deleting mails. [Stauts: testing]
-- Add section to manage slow connections errors and fetchmail authorization failure message.
-- Shell script to download email headers and few lines to delete undesired. [Status: starting]
+- Check the "IN #" data source to avoid confusion after deleting mails. [Stauts: done]
+- Add section to manage slow connections errors and fetchmail authorization failure message. [Status: soon]
+- Shell script to download email headers and few lines to delete undesired. [Status: done, testing]
 - Add 2 Factor Authentication. 
 - eMCheck run from memory disk (ramdisk) with reserved or protected memory: OS related. [Status: documentation]
 
