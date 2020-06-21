@@ -45,7 +45,7 @@ Please, change the default password with one more secure:
   
   
 3) eMCdata.esh : an encrypted fetchmailrc file with accounts data.
-Write it or use fetchmailconf, a Python-based GUI to configure fetchmail, to create a fetchmailrc file.
+Write it or use fetchmailconf, a Python-based GUI to configure fetchmail.
   
 eMCdata example, please change the accounts data according, e.g.:
   
