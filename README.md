@@ -1,6 +1,6 @@
 eMCheck, encrypt Mail Checker, check for new email in gmail.com, yahoo.com and other accounts.
 
-eMCheck is an encrypted shell script tested in FreeBSD, OpenBSD and Debian Linux and depends on fetchmail. 
+eMCheck is an encrypted shell script tested in FreeBSD, OpenBSD, Debian Linux and depends on fetchmail. 
 
 For description, settings, usage and options read the README file.
 
