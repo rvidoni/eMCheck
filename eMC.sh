@@ -30,18 +30,19 @@
 # THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+ 
 # ------------------------------------------------------------------- #
 # Version: 6.2 - rev.: 0 - FOD - May 22 2020 - Public 01
 # Version: 6.3 - rev.: 0 - FO  - Jun 19 2020 - modification: data to fetchmail
 # Version: 6.3 - rev.: 1 - FOD - Jun 20 2020 - code revision
 # ------------------------------------------------------------------- #
-
-
-
+ 
+ 
+ 
 	MCHECK=$(readlink -f "$0")
 	MCPATH=$(dirname "$MCHECK")
 	export MCPATH
-
-
+ 
+ 
 	openssl aes-256-ctr -d -md sha256  <>  "$MCPATH"/eMCheck.esh | sh 
+ 
