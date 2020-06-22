@@ -6,19 +6,17 @@ set bouncemail
 set no spambounce
 set softbounce
 set properties ""
-
+#
 # Gmail.com example
 poll pop.gmail.com with proto POP3
 user 'user.test@gmail.com' there with password 'password' is 'user.test' here options keep ssl sslcertck
-
+#
 # Yahoo.com example
 poll pop.mail.yahoo.com with proto POP3
 user 'user.name@yahoo.com' there with password 'password' is 'user.name' here options keep ssl sslcertck
-
-
-
-
- 
+#
+#
+#
 # 
 # For fetchmail full set of options read: man fetchmail.
 # The latest HTML FAQ is available alongside the latest fetchmail sources at the fetchmail home page: 
