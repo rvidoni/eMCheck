@@ -1,15 +1,15 @@
 eMCheck - encrypt Mail Checker
-
+  
 eMCheck check for new email in gmail.com, yahoo.com and other accounts.
- 
+  
 eMCheck is an encrypted shell script tested in FreeBSD, OpenBSD, Debian Linux and depends on fetchmail.
- 
+  
 eMCheck print 4 fields: 
 	"Start #" session mail number.
 	"Now #" last check new mail.
 	"In #" session new mail.
 	"Inbox" total mail on the server.
- 
+  
 The scripts with sensitive data are OpenSSL encrypted with salted password, cipher aes-256-ctr, Message Digest sha256.
  
  
@@ -73,7 +73,7 @@ After writing the accounts data encrypt eMCdata using the new password:
 	openssl aes-256-ctr -md sha256 -k new_pssw <> eMCdata > eMCdata.esh
  
   
-Note that Gmail.com require extra setup, log in and go to Settings > Forwarding and POP/IMAP tab and set:
+Note that Gmail.com require extra setup, log in, go to Settings > Forwarding and POP/IMAP tab and set:
 Enable POP for mail that arrives from now: ON
 Keep Gmail's copy in the Inbox. 
 Save the Changes
