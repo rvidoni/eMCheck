@@ -64,9 +64,9 @@ poll pop.mail.yahoo.com with proto POP3
 user 'user.name@yahoo.com' there with password 'password' is 'user.name' here options keep ssl sslcertck
   
   
-Ref.: man fetchmail.
+Ref.: man fetchmail
 The latest HTML FAQ is available alongside the latest fetchmail sources at the fetchmail home page: http://www.fetchmail.info/
-  
+fetchmailconf, a Python-based GUI to configure fetchmail, can generate a fetchmailrc file.
   
 After writing the accounts data encrypt eMCdata using the new password:  
  
