@@ -25,7 +25,7 @@ user 'user.name@yahoo.com' there with password 'password' is 'user.name' here op
 #
 # After writing the accounts data encrypt eMCdata using the new password:  
 #
-#                        openssl aes-256-ctr -md sha256 -k new_pssw <> eMCdata > eMCdata.esh
+#                        openssl aes-256-ctr -md sha256 -k new_password <> eMCdata > eMCdata.esh
 # 
 #
 # Note that gmail.com require extra setup, log in, go to Settings > Forwarding and POP/IMAP tab and set:
