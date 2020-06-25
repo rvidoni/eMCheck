@@ -39,9 +39,9 @@ The number in the square brackets [*] refer to the options position in the scrip
  
 eMCheck new password and encryption.
 Please, change the default password with one more secure:
-	a) change the default password in eMCheck:  cat eMCheck | sed 's/PASSWORD/new_pssw/g' > eMCheck.sh
+	a) change the default password in eMCheck:  cat eMCheck | sed 's/PASSWORD/new_password/g' > eMCheck.sh
 	b) check the new password:  sdiff -s eMCheck eMCheck.sh
-	c) now encrypt eMCheck.sh with OpenSSL:  openssl aes-256-ctr -md sha256 -k new_pssw <> eMCheck.sh > eMCheck.esh
+	c) now encrypt eMCheck.sh with OpenSSL:  openssl aes-256-ctr -md sha256 -k new_password <> eMCheck.sh > eMCheck.esh
   
   
 3) eMCdata.esh : an encrypted fetchmailrc file with accounts data.
@@ -70,7 +70,7 @@ fetchmailconf, a Python-based GUI to configure fetchmail, can generate a fetchma
   
 After writing the accounts data encrypt eMCdata using the new password:  
  
-	openssl aes-256-ctr -md sha256 -k new_pssw <> eMCdata > eMCdata.esh
+	openssl aes-256-ctr -md sha256 -k new_password <> eMCdata > eMCdata.esh
  
   
 Note that Gmail.com require extra setup, log in, go to Settings > Forwarding and POP/IMAP tab and set:
